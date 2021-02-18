@@ -1,0 +1,47 @@
+<!--
+    Desenhando
+    - Pensar nos requisitos
+    - Ajuda a definir as necessidades
+
+    Dicas:
+    - Simples e focado
+    - Somente dados necessários
+    - Verifique o que te agrada
+-->
+
+
+
+<form id="contato" action="">
+    <fieldset form="contato">
+        <legend>Contato</legend>
+        <label for="" class="required"><strong>Nome</strong></label> <br>
+        <input type="text" required placeholder="Nome"><br> <br>
+
+        <label for="" class="required"><strong>Email</strong></label><br>
+        <input type="email" required placeholder="example@gmail.com"><br> <br>
+
+        <label for="" class="required"><strong>Mensagem</strong></label><br>
+        <textarea cols="30" rows="10" required placeholder="Deixe uma Mensagem"></textarea><br>
+        <br>
+        <button type="submit">Enviar</button>
+    </fieldset>
+</form>
+
+<style>
+    input {
+        height: 32px;
+        width: 231px;
+    }
+
+    button {
+        height: 30px;
+        width: 55px;
+        background-color: #48D1CC;
+        color: black;
+    }
+
+    .required:after {
+        content:" *";
+        color: red;
+    }
+</style>
